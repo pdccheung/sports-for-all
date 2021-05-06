@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.tabs.hideCondition": "never",
+    "terminal.integrated.tabs.enabled": false
+}
