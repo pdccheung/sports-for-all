@@ -31,7 +31,10 @@ const ProductPage = ({match} ) => {
                             <h3>{product.name}</h3>
                         </ListGroup.Item>
                         <ListGroup.Item>
-                            <Rating value={product.rating} text={`${product.numReviews} Reviews`} />
+                            <Rating 
+                            value={product.rating} 
+                            text={`${product.numReviews} Reviews`} 
+                            />
                         </ListGroup.Item>
                         <ListGroup.Item>
                             Price: ${product.price}
@@ -65,7 +68,7 @@ const ProductPage = ({match} ) => {
                             </Row>
                             </ListGroup.Item>
                             <ListGroup.Item>
-                                <Button className="btn-block" type="button" disable={product.countInStock === 0 }>
+                                <Button className="btn-block" type="button" disabled={product.countInStock === 0 }>
                                     Add to cart
                                 </Button>
                             </ListGroup.Item>
