@@ -14,7 +14,7 @@ const products = [
     {
         _id: '2',
         name: 'Wilson Crossover Basketball',
-        image: '/images/wilson crossover bball.png',
+        image: '/images/wilson-crossover-bball.png',
         description: 'size 29.5',
         brand: 'Wilson',
         category: 'Basketball',
@@ -26,7 +26,7 @@ const products = [
     {
         _id: '3',
         name: 'Tachikara indoor volleyball',
-        image: '/images/tachikara_six game ball.png',
+        image: '/images/tachikara-six-gameball.png',
         description: 'Indoor volleyball tournament game ball',
         brand: 'Tachikara',
         category: 'Indoor VolleyBall',
@@ -38,7 +38,7 @@ const products = [
     {
         _id: '4',
         name: 'Overkill beach system',
-        image: '/images/beach system1.png',
+        image: '/images/beach-system1.png',
         description: 'Quick and easy beach volleyball system',
         brand: 'Overkill',
         category: 'Beach Volleyball',
@@ -50,7 +50,7 @@ const products = [
     {
         _id: '5',
         name: 'Wilson Evolution Game ball',
-        image: '/images/wilson evolution bball.jpg',
+        image: '/images/wilson-evolution-bball.jpg',
         description: 'The one and only indoor basketball, used and recognized by all ballers',
         brand: 'Wilson',
         category: 'Basketball',
@@ -62,7 +62,7 @@ const products = [
     {
         _id: '6',
         name: 'Crossney System',
-        image: '/images/crossnet system.jpeg',
+        image: '/images/crossnet-system.jpeg',
         description: 'The volleyball beginner starter pack',
         brand: 'Crossnet',
         category: 'Beach VolleyBall',
@@ -74,4 +74,4 @@ const products = [
 
 ]
 
-export default products
+module.exports = products
