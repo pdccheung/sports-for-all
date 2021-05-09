@@ -1,6 +1,5 @@
 const products = [
     {
-
         name: 'Mikasa Beach game ball',
         image: '/images/mikasa-Beach-volleyball.jpeg',
         description: 'The perfect beach volleyball for your summer',
@@ -12,7 +11,6 @@ const products = [
         numReviews: 5,
     },
     {
-
         name: 'Wilson Crossover Basketball',
         image: '/images/wilson-crossover-bball.png',
         description: 'size 29.5',
@@ -24,7 +22,6 @@ const products = [
         numReviews: 2,
     },
     {
-
         name: 'Tachikara indoor volleyball',
         image: '/images/tachikara-six-gameball.png',
         description: 'Indoor volleyball tournament game ball',
@@ -36,7 +33,6 @@ const products = [
         numReviews: 2,
     },
     {
-
         name: 'Overkill beach system',
         image: '/images/beach-system1.png',
         description: 'Quick and easy beach volleyball system',
@@ -48,7 +44,6 @@ const products = [
         numReviews: 5,
     },
     {
-
         name: 'Wilson Evolution Game ball',
         image: '/images/wilson-evolution-bball.jpg',
         description: 'The one and only indoor basketball, used and recognized by all ballers',
@@ -59,7 +54,7 @@ const products = [
         rating: 5,
         numReviews: 200,
     },
-
+    {
         name: 'Crossney System',
         image: '/images/crossnet-system.jpeg',
         description: 'The volleyball beginner starter pack',
