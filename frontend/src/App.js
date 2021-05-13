@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import ProductPage from "./pages/ProductPage"
 import CartPage from "./pages/CartPage";
+import LoginPage from "./pages/LoginPage";
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
       <Header />
       <main className="py-3">
         <Container>
-          <Route exact path='/' component={HomePage} />
           <Route path='/product/:id' component={ProductPage} />
           <Route path='/cart/:id?' component={CartPage} />
+          <Route path='/login' component={LoginPage} />
+          <Route exact path='/' component={HomePage} />
         </Container>
    
       </main>
