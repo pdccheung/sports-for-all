@@ -70,7 +70,9 @@ const RegisterPage = ({ location, history }) => {
                 </Form.Group>
 
                 <Button type='submit' variant='primary'>Register </Button>
+            </Form>
 
+            
                 <Row className='py-3'>
                     <Col> Have an account?{" "}
                     <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
@@ -79,7 +81,7 @@ const RegisterPage = ({ location, history }) => {
                     </Col>
                 </Row>
 
-            </Form>
+
 
         </FormContainer>
 
