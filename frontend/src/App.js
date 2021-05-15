@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage"
 import ProfilePage from "./pages/ProfilePage";
 import ShippingPage from "./pages/ShippingPage";
+import PaymentPage from "./pages/PaymentPage";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Container>
           <Route path='/product/:id' component={ProductPage} />
           <Route path='/shipping' component={ShippingPage} />
+          <Route path='/payment' component={PaymentPage} />
           <Route path='/cart/:id?' component={CartPage} />
           <Route path='/login' component={LoginPage} />
           <Route path='/register' component={RegisterPage} />
