@@ -6,15 +6,23 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listUsers } from "../actions/userActions";
 
-const UserListPage = () => {
+const UserListPage = ({history}) => {
   const dispatch = useDispatch();
 
-  const userList = useSelector((state) => state.userList);
+  const userList = useSelector(state => state.userList);
   const { loading, error, users } = userList;
 
+  const userLogin = useSelector(state=> state.userLogin);
+  const { userInfo } = userLogin;
+
   useEffect(() => {
-    dispatch(listUsers())
-  }, [dispatch]);
+      if(userInfo && userInfo.admin) {
+              dispatch(listUsers())
+      } else {
+          history.push('/login')
+      }
+
+  }, [dispatch, history, userInfo]);
 
   const deleteHandler = () => {
     console.log("Delete")
@@ -23,11 +31,11 @@ const UserListPage = () => {
   return (
     <>
       <h1>Users</h1>
-      {loading ? (
+      {loading ? 
         <Loader />
-      ) : error ? (
+       : error ? 
         <Message variant="danger">{error}</Message>
-      ) : (
+       : (
         <Table striped bordered hover responsive className="table-sm">
           <thead>
             <tr>
@@ -39,7 +47,7 @@ const UserListPage = () => {
             </tr>
           </thead>
           <tbody>
-            {users.map((user) => (
+            {users.map(user => (
               <tr key={user._id}>
                 <td>{user._id}</td>
                 <td>{user.name}</td>
